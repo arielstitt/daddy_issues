@@ -6,16 +6,19 @@ import LoginView from "./components/LoginView"
 import LoginForm from "./components/LoginForm"
 import IssuesListView from './components/IssuesListView';
 import About from './components/AboutUs'
+import SingleIssueView from './components/SingleIssueView';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={LandingPage}/>
+          <Route exact path="/" component={LandingPage} />
           {/* <Route exact path="/issues" /> */}
           <Route exact path="/login" component={LoginView} />
           <Route exact path="/issues" component={IssuesListView} />
+          {/* <Route exact path="/issues" component={SingleIssueView} /> */}
+          <Route path="/issues/:id" component={SingleIssueView} />
           <Route exact path="/about" component={About} />
         </div>
       </Router>

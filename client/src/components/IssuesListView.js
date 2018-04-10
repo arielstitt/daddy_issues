@@ -3,6 +3,7 @@ import axios from 'axios'
 import styled from 'styled-components'
 import { Container, Modal, Button, Card, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
+import UniqueNav from "./UniqueNav"
 
 const Wrapper = styled.div`
 display: flex;
@@ -37,7 +38,6 @@ class IssuesListView extends Component {
     render() {
         return (
             <div>
-                {console.log(this.state)}
                 <Wrapper>
                 {this.state.issues.map(issue => {
                     return (
