@@ -1,4 +1,5 @@
 class Api::IssuesController < ApplicationController
+    
     def index
         @issues = Issue.all
         render json: @issues 
@@ -19,7 +20,7 @@ class Api::IssuesController < ApplicationController
     def update
         # find the issue by id
         @issue = Issue.find(params[:id])
-        @artist.update!(artist_params)
+        @issue.update!(issue_params)
 
         render json: @issue 
     end
@@ -32,7 +33,7 @@ class Api::IssuesController < ApplicationController
 
     private 
 
-    def artist_params
-        params.require(:issue).permit(:name, :location, :issue, :image) 
+    def issue_params
+        params.require(:issue).permit(:name, :location, :description, :image) 
     end
 end
