@@ -6,15 +6,53 @@ class EditForm extends Component {
         return (
             <div>
 
-  <Form>
-    <Form.Group widths='equal'>
-      <Form.Field id='form-input-control-first-name' control={Input} label='First name' placeholder='First name' />
-      <Form.Field id='form-input-control-last-name' control={Input} label='Last name' placeholder='Last name' />
-    </Form.Group>
-    <Form.Field id='form-textarea-control-opinion' control={TextArea} label='Opinion' placeholder='Opinion' />
-    <Form.Field id='form-button-control-public' control={Button} content='Confirm' label='Label with htmlFor' />
-  </Form>
-)
+                <Form>
+
+                    <Form.Group widths='equal'>
+
+                        <Form.Field
+                            control={Input}
+                            label='User Name'
+                            placeholder='User Name'
+                            name='name'
+                            value={this.props.issue.name}
+                        />
+
+                        <Form.Field
+                            control={Input}
+                            label='Location'
+                            placeholder='Location'
+                            name='location'
+                            value={this.props.issue.location}
+                        />
+
+                        <Form.Field
+                            control={Input}
+                            label='Image URL'
+                            placeholder='Change Your Profile Pick'
+                            name='image'
+                            value={this.props.issue.image}
+                        />
+
+                    </Form.Group>
+
+                    <Form.Field
+                        control={TextArea}
+                        label="Issues"
+                        placeholder='Tell Us Your Issues'
+                        name='description'
+                        value={this.props.issue.description}
+                    />
+
+                    <Form.Field
+                        control={Button}
+                        content='Confirm'
+                        type="text"
+                        
+                    />
+
+                </Form>
+
             </div>
         );
     }

@@ -38,7 +38,7 @@ class SingleIssueView extends Component {
 
     handleChange = (event) => {
         const issue = event.target.name 
-        const newIssue = {...this.state.artis}
+        const newIssue = {...this.state.issue}
         newIssue[issue] = event.target.value
         this.setState({issue: newIssue})
     }
@@ -61,7 +61,7 @@ class SingleIssueView extends Component {
             {this.state.issue.description}
             
             {this.state.issue.location}
-            <button>Edit</button>
+            <button onClick={this.toggleEditView}>Edit</button>
             </div>
             )
             }
