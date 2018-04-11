@@ -24,18 +24,23 @@ class SingleIssueView extends Component {
     }
 
     toggleEditView = () => {
-        this.setState({showEditIssue: !showEditIssue})
+        this.setState({ showEditIssue: !this.state.showEditIssue })
     }
-    handleChange = (event) => {
-
-    }
+    
     handleSubmit = async (event) => {
         event.preventDefault()
         const issueId = this.state.artist.id
-        const artistUpdate = {...thi.state.issue}
+        const issueUpdate = {...this.state.issue}
         await axios.patch(`/api/issues/${issueId}`, issueUpdate)
         this.toggleEditView()
         await this.getSingleIssue()
+    }
+
+    handleChange = (event) => {
+        const issue = event.target.name 
+        const newIssue = {...this.state.artis}
+        newIssue[issue] = event.target.value
+        this.setState({issue: newIssue})
     }
 
     render() {
