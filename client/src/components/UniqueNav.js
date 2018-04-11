@@ -10,6 +10,8 @@ height: 45vh;
 padding: 1%;
 display: flex;
 flex-direction: column;
+justify-content: space-around;
+align-items: flex-end;
 `
 const PinkHover = styled(Link) `
     color:white;

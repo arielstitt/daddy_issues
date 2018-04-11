@@ -11,14 +11,14 @@ Issue.destroy_all
 # Merchandise.destroy_all
 
 # ISSUES
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
-Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , issue: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
+Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
 
 # CART
 

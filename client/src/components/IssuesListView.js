@@ -35,6 +35,12 @@ class IssuesListView extends Component {
         }
     }
 
+    deleteIssue = async (id) => {
+        await axios.delete(`/api/issues/${id}`)
+        await this.getAllIssues()
+        
+    }
+
     render() {
         return (
             <div>
@@ -52,6 +58,7 @@ class IssuesListView extends Component {
                             {issue.description}
                                
                             </Link>
+                            <button onClick={()=>this.deleteIssue(issue.id)}> Delete </button>
                         </Wrapper>
                     )
                 })}
