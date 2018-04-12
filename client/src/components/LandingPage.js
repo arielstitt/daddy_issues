@@ -3,7 +3,7 @@ import styled from "styled-components"
 import UniqueNav from './UniqueNav';
 
 const LandingWrapper = styled.div`
-background-color: #383434;;
+background-color: #383434;
 color:white;
 height: 100vh;
 width: 100vw;
