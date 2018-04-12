@@ -63,9 +63,7 @@ class IssuesListView extends Component {
                             <Card>
                             <Card.Content>
       <Card.Header>
-      <Segment inverted>
-      <Button basic inverted color='red'>Red</Button>
-      </Segment>
+      <Button basic color='red' onClick={()=>this.deleteIssue(issue.id)}> Delete </Button>
       </Card.Header>
     </Card.Content>
     <Image src={issue.image} />
@@ -80,7 +78,9 @@ class IssuesListView extends Component {
         </span>
       </Card.Meta>
       <Card.Description>
+        <Segment >
         {issue.description}
+      </Segment>
       </Card.Description>
     </Card.Content>
   </Card>
