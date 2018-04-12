@@ -49,13 +49,17 @@ class SingleIssueView extends Component {
     render() {
         return (
             <div>
+                {/* by default make the edit page false */}
                 {this.state.showEditIssue ? (
+                    // if true show the edit form
+                    // and pass these functions into them 
                     <EditForm
                         handleChange={this.handleChange}
                         handleSubmit={this.handleSubmit}
                         issue={this.state.issue}
-                        toggleEditView={this.toggleEditView}
                     />)
+                    // else show the single issue view
+                    // where the button has the toggle function
                     : (
                         <div>
                             <img src={this.state.issue.image} alt="" />
@@ -66,6 +70,7 @@ class SingleIssueView extends Component {
 
                             {this.state.issue.location}
                             <button onClick={this.toggleEditView}>Edit</button>
+                            
                             <button>
                                 <Link to='/issues'>
                                     Issues
