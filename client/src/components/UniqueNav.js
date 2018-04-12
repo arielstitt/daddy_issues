@@ -16,7 +16,7 @@ align-items: flex-end;
 const PinkHover = styled(Link) `
     color:white;
     text-decoration: none;
-    text-shadow: 2px 2px #ce6a6a;
+    text-shadow: 2px 2px 3px #ce6a6a;
     &:hover {
         color:bisque;
     }

@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
+import styled from "styled-components"
+
+
+const FormWrapper = styled.div`
+background-color: #383434;
+height: 100vh;
+width: 100vw;
+display: flex;
+align-items:center;
+justify-content: center;
+`
 
 class NewIssue extends Component {
     render() {
         return (
             <div>
+                <FormWrapper>
                 <Form onSubmit={this.props.createNewIssue}>
 
                     <Form.Group widths='equal'>
@@ -48,7 +60,7 @@ class NewIssue extends Component {
                     />
                     <Button type="submit">Submit</Button>
                 </Form>
-
+</FormWrapper>
             </div>
         );
     }
