@@ -17,7 +17,13 @@ display: flex;
 class IssuesListView extends Component {
 
     state = {
-        issues: []
+        issues: [],
+        newIssue: {
+            name: '',
+            image: '',
+            location: '',
+            description: ''
+        }
     }
 
     componentDidMount() {
@@ -39,54 +45,60 @@ class IssuesListView extends Component {
     deleteIssue = async (id) => {
         await axios.delete(`/api/issues/${id}`)
         await this.getAllIssues()
-        
+
+    }
+
+    createNewIssue = async (event) => {
+        event.preventDefault()
+        const response = await axios.post('/api/issues', response.data)
+        this.setState({
+            issues,
+            newIssue: {
+                name: '',
+                image: '',
+                location: '',
+                description: ''
+            }
+        })
     }
 
     render() {
         return (
             <div>
                 <Wrapper>
-                {this.state.issues.map(issue => {
-                    return (
-                        <Wrapper key={issue.id}>
-                            <Link to={`/issues/${issue.id}`}>
-                            {issue.name}
+                    {this.state.issues.map(issue => {
+                        return (
+                            <Wrapper key={issue.id}>
+                                <Link to={`/issues/${issue.id}`}>
+                                    <Card>
+                                        <Card.Content>
+                                        </Card.Content>
+                                        <Image src={issue.image} />
 
-                            {issue.location}
-                
-                            <Image src={issue.image} />
+                                        <Card.Content>
+                                            <Card.Header>
+                                                {issue.name}
+                                            </Card.Header>
+                                            <Card.Meta>
+                                                <span className='location'>
+                                                    {issue.location}
+                                                </span>
+                                            </Card.Meta>
+                                            <Card.Description>
+                                                <Segment >
+                                                    {issue.description}
+                                                </Segment>
+                                            </Card.Description>
+                                        </Card.Content>
+                                    </Card>
+                                </Link>
 
-                            {issue.description}
-                               
-                            </Link>
-                            <button onClick={()=>this.deleteIssue(issue.id)}> Delete </button>
-                            <Card>
-                            <Card.Content>
-      <Card.Header>
-      <Button basic color='red' onClick={()=>this.deleteIssue(issue.id)}> Delete </Button>
-      </Card.Header>
-    </Card.Content>
-    <Image src={issue.image} />
-    
-    <Card.Content>
-      <Card.Header>
-        {issue.name}
-      </Card.Header>
-      <Card.Meta>
-        <span className='location'>
-          {issue.location}
-        </span>
-      </Card.Meta>
-      <Card.Description>
-        <Segment >
-        {issue.description}
-      </Segment>
-      </Card.Description>
-    </Card.Content>
-  </Card>
-                        </Wrapper>
-                    )
-                })}
+                                <Button fluid basic color='red' onClick={() => this.deleteIssue(issue.id)}> Delete </Button>
+
+                            </Wrapper>
+                        )
+                    })}
+
                 </Wrapper>
             </div>
         );
