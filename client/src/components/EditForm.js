@@ -6,7 +6,7 @@ class EditForm extends Component {
         return (
             <div>
 
-                <Form>
+                <Form onSubmit={this.props.handleSubmit}>
 
                     <Form.Group widths='equal'>
 
@@ -16,6 +16,7 @@ class EditForm extends Component {
                             placeholder='User Name'
                             name='name'
                             value={this.props.issue.name}
+                            onChange = {this.props.handleChange}
                         />
 
                         <Form.Field
@@ -24,6 +25,7 @@ class EditForm extends Component {
                             placeholder='Location'
                             name='location'
                             value={this.props.issue.location}
+                            onChange = {this.props.handleChange}
                         />
 
                         <Form.Field
@@ -32,6 +34,7 @@ class EditForm extends Component {
                             placeholder='Change Your Profile Pick'
                             name='image'
                             value={this.props.issue.image}
+                            onChange = {this.props.handleChange}
                         />
 
                     </Form.Group>
@@ -42,15 +45,9 @@ class EditForm extends Component {
                         placeholder='Tell Us Your Issues'
                         name='description'
                         value={this.props.issue.description}
+                        onChange = {this.props.handleChange}
                     />
-
-                    <Form.Field
-                        control={Button}
-                        content='Confirm'
-                        type="text"
-                        
-                    />
-
+                    <Button type="submit">Submit</Button>
                 </Form>
 
             </div>

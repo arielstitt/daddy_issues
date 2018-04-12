@@ -31,7 +31,9 @@ class UniqueNav extends Component {
                 <PinkHover to="/login"> <h1>Login </h1></PinkHover>
                 <PinkHover to="#"> <h1>Smell Daddy Issues</h1>  </PinkHover>
                 <PinkHover to="#"><h1>Wear Daddy Issues</h1>  </PinkHover>
-                <PinkHover to="/about"><h1>About Us </h1>  </PinkHover>
+                <PinkHover to="/about">
+                    <h1>About Us </h1>
+                </PinkHover>
 
             </NavWrapper>
 

@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Container, Modal, Button, Card, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 import UniqueNav from "./UniqueNav"
+import { Icon, Feed, Segment } from 'semantic-ui-react'
 
 const Wrapper = styled.div`
 display: flex;
@@ -59,10 +60,33 @@ class IssuesListView extends Component {
                                
                             </Link>
                             <button onClick={()=>this.deleteIssue(issue.id)}> Delete </button>
+                            <Card>
+                            <Card.Content>
+      <Card.Header>
+      <Segment inverted>
+      <Button basic inverted color='red'>Red</Button>
+      </Segment>
+      </Card.Header>
+    </Card.Content>
+    <Image src={issue.image} />
+    
+    <Card.Content>
+      <Card.Header>
+        {issue.name}
+      </Card.Header>
+      <Card.Meta>
+        <span className='location'>
+          {issue.location}
+        </span>
+      </Card.Meta>
+      <Card.Description>
+        {issue.description}
+      </Card.Description>
+    </Card.Content>
+  </Card>
                         </Wrapper>
                     )
                 })}
-                hello world
                 </Wrapper>
             </div>
         );

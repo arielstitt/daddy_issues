@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from "axios"
 import EditForm from "./EditForm"
+import { Link } from "react-router-dom";
+
 
 class SingleIssueView extends Component {
     state = {
@@ -26,51 +28,57 @@ class SingleIssueView extends Component {
     toggleEditView = () => {
         this.setState({ showEditIssue: !this.state.showEditIssue })
     }
-    
+
     handleSubmit = async (event) => {
         event.preventDefault()
-        const issueId = this.state.artist.id
-        const issueUpdate = {...this.state.issue}
+        console.log(this.state.issue)
+        const issueId = this.state.issue.id
+        const issueUpdate = { ...this.state.issue }
         await axios.patch(`/api/issues/${issueId}`, issueUpdate)
         this.toggleEditView()
         await this.getSingleIssue()
     }
 
     handleChange = (event) => {
-        const issue = event.target.name 
-        const newIssue = {...this.state.issue}
+        const issue = event.target.name
+        const newIssue = {...this.state.issue }
         newIssue[issue] = event.target.value
-        this.setState({issue: newIssue})
+        this.setState({ issue: newIssue })
     }
 
     render() {
         return (
             <div>
-            {this.state.showEditIssue ? (
-                <EditForm 
-                handleChange = {this.handleChange}
-                handleSubmit = {this.handleSubmit}
-                issue = {this.state.issue}
-                />)
-            : (
-            <div>
-            <img src={this.state.issue.image} alt="" />
-            
-            {this.state.issue.name}  
-            
-            {this.state.issue.description}
-            
-            {this.state.issue.location}
-            <button onClick={this.toggleEditView}>Edit</button>
+                {this.state.showEditIssue ? (
+                    <EditForm
+                        handleChange={this.handleChange}
+                        handleSubmit={this.handleSubmit}
+                        issue={this.state.issue}
+                        toggleEditView={this.toggleEditView}
+                    />)
+                    : (
+                        <div>
+                            <img src={this.state.issue.image} alt="" />
+
+                            {this.state.issue.name}
+
+                            {this.state.issue.description}
+
+                            {this.state.issue.location}
+                            <button onClick={this.toggleEditView}>Edit</button>
+                            <button>
+                                <Link to='/issues'>
+                                    Issues
+                                </Link>
+                            </button>
+                        </div>
+                    )
+                }
+
             </div>
-            )
-            }
-            
-    
-            </div>
-                
+
         )
-        
-    }   
-}                
+
+    }
+}
 export default SingleIssueView;
