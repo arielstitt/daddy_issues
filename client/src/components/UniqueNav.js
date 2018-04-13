@@ -19,6 +19,8 @@ const PinkHover = styled(Link) `
     text-shadow: 2px 2px 3px #ce6a6a;
     &:hover {
         color:bisque;
+        
+}
     }
 `
 

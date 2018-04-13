@@ -12,12 +12,20 @@ align-items:center;
 justify-content: center;
 `
 
+const CustomForm= styled(Form)`
+    &&&& {
+        background-color:pink;
+        box-shadow: 0px 2px 20px 5px #795a60;
+        padding: 5%;
+    }
+`
+
 class NewIssue extends Component {
     render() {
         return (
             <div>
                 <FormWrapper>
-                <Form onSubmit={this.props.createNewIssue}>
+                <CustomForm onSubmit={this.props.createNewIssue}>
 
                     <Form.Group widths='equal'>
 
@@ -59,7 +67,7 @@ class NewIssue extends Component {
                         onChange={this.props.handleChange}
                     />
                     <Button type="submit">Submit</Button>
-                </Form>
+                </CustomForm>
 </FormWrapper>
             </div>
         );
