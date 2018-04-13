@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   namespace :api do
     resources :issues
-      resources :merchandises
+      resources :carts do
+        resources :merchandises
+    end
     end
   end
-end
