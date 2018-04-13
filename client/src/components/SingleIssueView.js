@@ -46,6 +46,8 @@ class SingleIssueView extends Component {
         this.setState({ issue: newIssue })
     }
 
+
+
     render() {
         return (
             <div>

@@ -19,7 +19,6 @@ const PinkHover = styled(Link) `
     text-shadow: 2px 2px 3px #ce6a6a;
     &:hover {
         color:bisque;
-        
 }
     }
 `
@@ -30,10 +29,23 @@ class UniqueNav extends Component {
 
             <NavWrapper>
 
-                <PinkHover to="/login"> <h1>Login </h1></PinkHover>
-                <PinkHover to="#"> <h1>Smell Daddy Issues</h1>  </PinkHover>
-                <PinkHover to="#"><h1>Wear Daddy Issues</h1>  </PinkHover>
-                <PinkHover to="/about">
+                <PinkHover
+                    onMouseOver={() => this.props.changeBackground("green")}
+                    to="/login"> <h1>Login </h1>
+                </PinkHover>
+
+                <PinkHover onMouseOver={() => this.props.changeBackground("Red")}
+                    to="#"> <h1>Smell Daddy Issues</h1>
+                </PinkHover>
+
+                <PinkHover
+                    onMouseOver={() => this.props.changeBackground("blue")}
+                    to="#"><h1>Wear Daddy Issues</h1>
+                </PinkHover>
+
+                <PinkHover
+                    onMouseOver={() => this.props.changeBackground("yellow")}
+                    to="/about">
                     <h1>About Us </h1>
                 </PinkHover>
 
