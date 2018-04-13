@@ -13,8 +13,11 @@ class Api::CartsController < ApplicationController
 
     def show
         @cart = Cart.find(params[:id])
-
-        render json: @cart 
+        @merchandise = @cart.merchandise
+        render json: {
+           cart: @cart,
+           merchandise: @merchandise
+        } 
     end
 
     def update

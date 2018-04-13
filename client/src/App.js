@@ -20,6 +20,7 @@ class App extends Component {
           {/* <Route exact path="/issues" component={SingleIssueView} /> */}
           <Route path="/issues/:id" component={SingleIssueView} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/candles" component={About} />
         </div>
       </Router>
     );

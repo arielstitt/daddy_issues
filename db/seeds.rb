@@ -44,6 +44,9 @@ Merchandise.create(title: 'Carribean', price: 25.00, description: 'Mango, Lychee
 Merchandise.create(title: 'Spring Break', price: 25.00, description: 'Lemon, Tulip, Musk', image: 'https://sep.yimg.com/ay/bevfabriccrafts/unscented-3-pillar-candles-black-cotton-wick-4-candles-pkg-16.jpg', cart_id: cart.id )
 
 Merchandise.create(title: 'Spa Day', price: 25.00, description: 'Lavender, Patchouli', image: 'https://sep.yimg.com/ay/bevfabriccrafts/unscented-3-pillar-candles-black-cotton-wick-4-candles-pkg-16.jpg', cart_id: cart.id )
+
 # MERCHANDISE
-# Shirts
+# SHIRTS
 # Merchandise.create(title: 'Candle 10', price: 25.00, description: 'Smells Like Bad Decison and Red Wine')
+
+
