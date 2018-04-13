@@ -21,8 +21,7 @@ Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wan
 Issue.create!(name: 'Mimi' , location: 'Anywhere, USA' , description: 'All I wanted was pizza!', image: 'https://img0.etsystatic.com/162/1/5158591/il_340x270.1069850722_axhq.jpg' )
 
 # CART
-cart = Cart.create!(quantity:'', price: '')
-Cart.create!(quantity: '', price: '')
+cart = Cart.create!(quantity: nil, price: nil)
 
 # MERCHANDISE
 # CANDLE
