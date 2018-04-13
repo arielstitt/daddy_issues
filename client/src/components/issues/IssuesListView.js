@@ -3,7 +3,7 @@ import axios from 'axios'
 import styled from 'styled-components'
 import { Container, Modal, Button, Card, Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import UniqueNav from "./UniqueNav"
+// import UniqueNav from "./UniqueNav"
 import { Icon, Feed, Segment } from 'semantic-ui-react'
 import NewIssue from './NewIssue'
 

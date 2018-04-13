@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
-import LoginView from "./LoginView"
+import LoginView from "./issues/LoginView"
 
 
 const NavWrapper = styled.div`
@@ -31,20 +31,25 @@ class UniqueNav extends Component {
 
                 <PinkHover
                     onMouseOver={() => this.props.changeBackground("green")}
+                    onMouseLeave={() => this.props.changeBackground("#383434")}
                     to="/login"> <h1>Login </h1>
                 </PinkHover>
 
-                <PinkHover onMouseOver={() => this.props.changeBackground("Red")}
+                <PinkHover
+                    onMouseOver={() => this.props.changeBackground("Red")}
+                    onMouseLeave={() => this.props.changeBackground("#383434")}
                     to="#"> <h1>Smell Daddy Issues</h1>
                 </PinkHover>
 
                 <PinkHover
                     onMouseOver={() => this.props.changeBackground("blue")}
+                    onMouseLeave={()=> this.props.changeBackground("#383434")}
                     to="#"><h1>Wear Daddy Issues</h1>
                 </PinkHover>
 
                 <PinkHover
                     onMouseOver={() => this.props.changeBackground("yellow")}
+                    onMouseLeave={()=> this.props.changeBackground("#383434")}
                     to="/about">
                     <h1>About Us </h1>
                 </PinkHover>

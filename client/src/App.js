@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import LandingPage from "./components/LandingPage"
 import './App.css';
-import LoginView from "./components/LoginView"
-import LoginForm from "./components/LoginForm"
-import IssuesListView from './components/IssuesListView';
+import LoginView from "./components/issues/LoginView"
+import LoginForm from "./components/issues/LoginForm"
+import IssuesListView from './components/issues/IssuesListView';
 import About from './components/AboutUs'
-import SingleIssueView from './components/SingleIssueView';
+import SingleIssueView from './components/issues/SingleIssueView';
 
 class App extends Component {
   render() {
