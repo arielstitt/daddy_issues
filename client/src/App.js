@@ -7,6 +7,7 @@ import LoginForm from "./components/issues/LoginForm"
 import IssuesListView from './components/issues/IssuesListView';
 import About from './components/AboutUs'
 import SingleIssueView from './components/issues/SingleIssueView';
+import CandleListView from './components/merchandise/candleListView'
 
 class App extends Component {
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
           {/* <Route exact path="/issues" component={SingleIssueView} /> */}
           <Route path="/issues/:id" component={SingleIssueView} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/candles" component={About} />
+          <Route exact path="/candles" component={CandleListView} />
         </div>
       </Router>
     );
