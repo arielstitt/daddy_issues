@@ -56,14 +56,16 @@ class IssuesListView extends Component {
     createNewIssue = async (event) => {
         event.preventDefault()
         const response = await axios.post('/api/issues', this.state.newIssue)
-        const artists = [...this.state.issues, response.data]
+        const issues = [...this.state.issues, response.data]
         this.setState({
             newIssue: {
                 name: '',
                 image: '',
                 location: '',
                 description: ''
-            }
+            },
+            issues: issues,
+            showNewIssue: false,
         })
     }
 
