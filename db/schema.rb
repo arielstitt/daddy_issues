@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20180416150507) do
     t.bigint "cart_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "type"
+    t.string "merch_type"
     t.index ["cart_id"], name: "index_merchandises_on_cart_id"
   end
 
