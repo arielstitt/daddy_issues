@@ -1,21 +1,27 @@
 class Api::MerchandisesController < ApplicationController
 
-    def index
-        @merchandises = Merchandise.all
-        render json: @merchandises 
+    def candle
+        @candles = Merchandise.where(merch_type: 'candle')
+        render json: @candles 
     end
 
-    # def create
-    #     @merchandise = Merchandise.create!(merchandise_params)
+    def mauve
+        @mauves = Merchandise.where(merch_type: 'Mauve')
         
-    #     render json: @merchandise
-    # end
+        render json: @mauves
+    end
+    
+    def charcoal
+        @charcoals = Merchandise.where(merch_type: 'Charcoal')
+        
+        render json: @charcoals
+    end
 
-    # def show
-    #     @merchandise = Merchandise.find(params[:id])
+    def show
+        @merchandise = Merchandise.find(params[:id])
 
-    #     render json: @merchandise 
-    # end
+        render json: @merchandise 
+    end
 
     # def update
     #     # find the merchandise by id
@@ -31,10 +37,10 @@ class Api::MerchandisesController < ApplicationController
     #     render status: :ok
     # end
 
-    # private 
+    private 
 
-    # def merchandise_params
-    #     params.require(:merchandise).permit(:price, :quanitity) 
-    # end
+    def merchandise_params
+        params.require(:merchandise).permit(:price, :quanitity, :title, :description, :image) 
+    end
     
 end
