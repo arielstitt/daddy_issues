@@ -8,6 +8,7 @@ import IssuesListView from './components/issues/IssuesListView';
 import About from './components/AboutUs'
 import SingleIssueView from './components/issues/SingleIssueView';
 import CandleListView from './components/merchandise/CandleListView'
+import ShirtListView from './components/merchandise/ShirtListView';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path="/issues/:id" component={SingleIssueView} />
           <Route exact path="/about" component={About} />
           <Route exact path="/candles" component={CandleListView} />
+          <Route exact path="/shirts" component={ShirtListView} />
         </div>
       </Router>
     );

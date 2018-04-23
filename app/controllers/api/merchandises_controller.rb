@@ -6,6 +6,7 @@ class Api::MerchandisesController < ApplicationController
         @charcoals = Merchandise.where(merch_type: 'Charcoal')
         @mauves = Merchandise.where(merch_type: 'Mauve')
         @candles = Merchandise.where(merch_type: 'candle')
+      
     # then I render the items individually. In the database, it is organized by the name
         render json: {
             charcoals: @charcoals,

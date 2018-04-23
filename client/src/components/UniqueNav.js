@@ -44,7 +44,7 @@ class UniqueNav extends Component {
                 <PinkHover
                     onMouseOver={() => this.props.changeBackground("blue")}
                     onMouseLeave={()=> this.props.changeBackground("#383434")}
-                    to="#"><h1>Wear Daddy Issues</h1>
+                    to="/shirts"><h1>Wear Daddy Issues</h1>
                 </PinkHover>
 
                 <PinkHover
