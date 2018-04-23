@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 class CandleListView extends Component {
 
     state = {
-        merchandises:  []
+        merchandise:  []
     }
 
     componentDidMount() {
@@ -17,9 +17,9 @@ class CandleListView extends Component {
         try {
             const response = await axios.get("/api/merchandises");
             this.setState({
-                merchandise: response.data
+                merchandise: response.data.candles
             });
-            console.log(response.data)
+            console.log(response.data.candles)
         } catch (err) {
             console.log(err);
             this.setState({ err: err.message });
@@ -31,7 +31,7 @@ class CandleListView extends Component {
             <div>
 
                 hello from the candle list view!!!
-                {/* {this.state.merchandise.map(merchandise => {
+                {this.state.merchandise.map(merchandise => {
                     return (
                         <div key={merchandise.id}>
                             <br />
@@ -45,7 +45,7 @@ class CandleListView extends Component {
                          
                         </div>
                     )
-                })} */}
+                })}
 
             </div>
 

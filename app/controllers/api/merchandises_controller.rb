@@ -2,12 +2,11 @@ class Api::MerchandisesController < ApplicationController
 
 
     def index
-        @merchandise = Merchandise.all
-            
+    # since there are three merch types, I added a query where it would grab the items from their merch-type name
         @charcoals = Merchandise.where(merch_type: 'Charcoal')
         @mauves = Merchandise.where(merch_type: 'Mauve')
         @candles = Merchandise.where(merch_type: 'candle')
-
+    # then I render the items individually. In the database, it is organized by the name
         render json: {
             charcoals: @charcoals,
             mauves: @mauves,
