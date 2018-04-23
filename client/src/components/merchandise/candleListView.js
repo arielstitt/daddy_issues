@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 class CandleListView extends Component {
 
     state = {
-        merchandise:  []
+        merchandises:  []
     }
 
     componentDidMount() {
@@ -19,7 +19,7 @@ class CandleListView extends Component {
             this.setState({
                 merchandise: response.data
             });
-
+            console.log(response.data)
         } catch (err) {
             console.log(err);
             this.setState({ err: err.message });
@@ -29,7 +29,9 @@ class CandleListView extends Component {
     render() {
         return (
             <div>
-                {this.state.merchandise.map(merchandise => {
+
+                hello from the candle list view!!!
+                {/* {this.state.merchandise.map(merchandise => {
                     return (
                         <div key={merchandise.id}>
                             <br />
@@ -43,7 +45,7 @@ class CandleListView extends Component {
                          
                         </div>
                     )
-                })}
+                })} */}
 
             </div>
 

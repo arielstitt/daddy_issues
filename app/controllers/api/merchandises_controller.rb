@@ -1,25 +1,27 @@
 class Api::MerchandisesController < ApplicationController
 
-    def candle
-        @candles = Merchandise.where(merch_type: 'candle')
-        render json: @candles 
-    end
 
-    def mauve
+    def index
+        @merchandise = Merchandise.all
+            
+        @charcoals = Merchandise.where(merch_type: 'Charcoal')
         @mauves = Merchandise.where(merch_type: 'Mauve')
-        
-        render json: @mauves
+        @candles = Merchandise.where(merch_type: 'candle')
+
+        render json: {
+            charcoals: @charcoals,
+            mauves: @mauves,
+            candles: @candles
+        }
     end
     
-    def charcoal
-        @charcoals = Merchandise.where(merch_type: 'Charcoal')
-        
-        render json: @charcoals
-    end
+    # def index
+    #      @charcoals = Merchandise.where(merch_type: 'Charcoal')  
+    #     render json: @charcoals
+    # end
 
     def show
         @merchandise = Merchandise.find(params[:id])
-
         render json: @merchandise 
     end
 

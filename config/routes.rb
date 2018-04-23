@@ -4,7 +4,6 @@ Rails.application.routes.draw do
     resources :issues
       resources :carts do
         resources :merchandises
-
     end
     end
   end
