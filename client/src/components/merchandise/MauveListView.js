@@ -8,6 +8,10 @@ class MauveListView extends Component {
         return (
             <div>
                MAUVE COMPONENT!
+               {this.props.getAllMauve}
+               <button
+                onClick={this.props.alertButton}
+               >TEST</button>
             </div>
         );
     }

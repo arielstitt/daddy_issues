@@ -17,7 +17,9 @@ class ShirtListView extends Component {
     }
 
 // create a get all shirts function that calls on the getAllMauve and getAllCharcoal
-
+    alertButton = () => {
+        alert('you have successfully passed props!')
+    }
 
     getAllMauve = async () => {
         try {
@@ -50,8 +52,13 @@ class ShirtListView extends Component {
             <div>
                 Hello from the shirts list view!!!
                 {/* pass props into the mauve and charcoal components */}
-                <MauveListView/>
-                <CharcoalListView/>
+                <MauveListView 
+                    getAllMauve = {this.getAllMauve}
+                    alertButton = {this.alertButton}
+                />
+                <CharcoalListView
+                    getAllCharcoal = {this.getAllMauve} 
+                />
 
              
 
