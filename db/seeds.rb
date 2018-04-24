@@ -62,13 +62,13 @@ Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: '
 
 # Charcoal
 
-Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'http://www.diediedie.co.nz/images/large/Levis_Sale/Levi%20s%20new%20Zealand%20Store%20Women%20Levi%20s%20Sutro%20Tee%20-%20Color%20Mauve%20Chalk%20Garment%20Dyed%20Levi%20s%20Shirts%20Tops%20new%20Zealand%20Sale%20br%20Women%20Shirts%20Tops%20906_LRG.jpg', merch_type:'Charcoal', cart_id: cart.id )
+Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
 
-Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'http://www.diediedie.co.nz/images/large/Levis_Sale/Levi%20s%20new%20Zealand%20Store%20Women%20Levi%20s%20Sutro%20Tee%20-%20Color%20Mauve%20Chalk%20Garment%20Dyed%20Levi%20s%20Shirts%20Tops%20new%20Zealand%20Sale%20br%20Women%20Shirts%20Tops%20906_LRG.jpg', merch_type:'Charcoal', cart_id: cart.id )
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
 
-Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'http://www.diediedie.co.nz/images/large/Levis_Sale/Levi%20s%20new%20Zealand%20Store%20Women%20Levi%20s%20Sutro%20Tee%20-%20Color%20Mauve%20Chalk%20Garment%20Dyed%20Levi%20s%20Shirts%20Tops%20new%20Zealand%20Sale%20br%20Women%20Shirts%20Tops%20906_LRG.jpg', merch_type:'Charcoal', cart_id: cart.id )
+Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
 
-Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'http://www.diediedie.co.nz/images/large/Levis_Sale/Levi%20s%20new%20Zealand%20Store%20Women%20Levi%20s%20Sutro%20Tee%20-%20Color%20Mauve%20Chalk%20Garment%20Dyed%20Levi%20s%20Shirts%20Tops%20new%20Zealand%20Sale%20br%20Women%20Shirts%20Tops%20906_LRG.jpg', merch_type:'Charcoal', cart_id: cart.id )
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
 
 
 

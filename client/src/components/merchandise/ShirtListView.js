@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-
+import CharcoalListView from "./CharcoalListView"
+import MauveListView from './MauveListView'
 
 
 class ShirtListView extends Component {
@@ -11,21 +12,14 @@ class ShirtListView extends Component {
     }
 
     componentDidMount() {
-        // this.getAllMauve()
-        // this.getAllCharcoal() 
-        this.getAllShirts()
+        this.getAllMauve()
+        this.getAllCharcoal() 
     }
-    getAllShirts = async () => {
-        try {
-            const response = await axios.get("/api/merchandises");
-            this.setState({
-                merchandise: response.data.charcoals,
-            });
-            console.log(response.data.charcoals)
-        } catch (err) {
-            console.log(err);
-            this.setState({ err: err.message });
-        }
+
+// create a get all shirts function that calls on the getAllMauve and getAllCharcoal
+
+
+    getAllMauve = async () => {
         try {
             const response = await axios.get("/api/merchandises");
             this.setState({
@@ -36,55 +30,30 @@ class ShirtListView extends Component {
             console.log(err);
             this.setState({ err: err.message });
         }
-
     }
 
-    // getAllMauve = async () => {
-    //     try {
-    //         const response = await axios.get("/api/merchandises");
-    //         this.setState({
-    //             merchandise: response.data.mauves,
-    //         });
-    //         console.log(response.data.mauves)
-    //     } catch (err) {
-    //         console.log(err);
-    //         this.setState({ err: err.message });
-    //     }
-    // }
-
-    // getAllCharcoal = async () => {
-    //     try {
-    //         const response = await axios.get("/api/merchandises");
-    //         this.setState({
-    //             merchandise: response.data.charcoals,
-    //         });
-    //         console.log(response.data.charcoals)
-    //     } catch (err) {
-    //         console.log(err);
-    //         this.setState({ err: err.message });
-    //     }
-    // }
+    getAllCharcoal = async () => {
+        try {
+            const response = await axios.get("/api/merchandises");
+            this.setState({
+                merchandise: response.data.charcoals,
+            });
+            console.log(response.data.charcoals)
+        } catch (err) {
+            console.log(err);
+            this.setState({ err: err.message });
+        }
+    }
 
     render() {
         return (
             <div>
                 Hello from the shirts list view!!!
-                
-                {this.state.merchandise.map(merchandise => {
-                    return (
-                        <div key={merchandise.id}>
-                            <br />
-                            <h1>{merchandise.title}</h1>
-                            <br />
-                            {merchandise.price}
-                            <br />
-                            {merchandise.description}
-                            <br />
-                            <img height="300px" width="300px" src={merchandise.image} />
-                         
-                        </div>
-                    )
-                })}
+                {/* pass props into the mauve and charcoal components */}
+                <MauveListView/>
+                <CharcoalListView/>
+
+             
 
 
             </div>
