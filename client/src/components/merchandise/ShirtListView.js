@@ -8,7 +8,8 @@ import MauveListView from './MauveListView'
 class ShirtListView extends Component {
 
     state = {
-        merchandise:  []
+        charcoal:  [],
+        mauve: []
     }
 
     componentDidMount() {
@@ -25,7 +26,7 @@ class ShirtListView extends Component {
         try {
             const response = await axios.get("/api/merchandises");
             this.setState({
-                merchandise: response.data.mauves,
+                mauve: response.data.mauves,
             });
             console.log(response.data.mauves)
         } catch (err) {
@@ -38,7 +39,7 @@ class ShirtListView extends Component {
         try {
             const response = await axios.get("/api/merchandises");
             this.setState({
-                merchandise: response.data.charcoals,
+                charcoal: response.data.charcoals,
             });
             console.log(response.data.charcoals)
         } catch (err) {
@@ -54,7 +55,6 @@ class ShirtListView extends Component {
                 {/* pass props into the mauve and charcoal components */}
                 <MauveListView 
                     getAllMauve = {this.getAllMauve}
-                    alertButton = {this.alertButton}
                 />
                 <CharcoalListView
                     getAllCharcoal = {this.getAllMauve} 
