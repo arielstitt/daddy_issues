@@ -20,10 +20,7 @@ class ShirtListView extends Component {
         this.getAllCharcoal()
     }
 
-    // create a get all shirts function that calls on the getAllMauve and getAllCharcoal
-    alertButton = () => {
-        alert('you have successfully passed props!')
-    }
+
 
     getAllMauve = async () => {
         try {
@@ -52,7 +49,9 @@ class ShirtListView extends Component {
     }
 
     toggleCharcoalView = () => {
-        this.setState({ showCharcoal: !this.setstate.showCharcoal })
+        this.setState({
+            showCharcoal: !this.state.showCharcoal
+        })
     }
 
     render() {
@@ -62,7 +61,9 @@ class ShirtListView extends Component {
                 {/* pass props into the mauve and charcoal components */}
 
                 {/* if true, show mauve, if false, show charcoal */}
-                
+                <button Click={this.state.toggleCharcoalView}>
+                    char
+                </button>
 
                 {this.state.showCharcoal ?
                     (<CharcoalListView
@@ -72,7 +73,7 @@ class ShirtListView extends Component {
                     (<MauveListView
                         getAllMauve={this.getAllMauve}
                         mauve={this.state.mauve}
-                        
+
                     />)}
 
 

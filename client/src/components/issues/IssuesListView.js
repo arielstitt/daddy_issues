@@ -50,7 +50,9 @@ class IssuesListView extends Component {
 
     }
     toggleNewIssueForm = () => {
-        this.setState({ showNewIssue: !this.state.showNewIssue })
+        this.setState({ 
+            showNewIssue: !this.state.showNewIssue 
+        })
     }
 
     createNewIssue = async (event) => {
