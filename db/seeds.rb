@@ -20,29 +20,29 @@ cart = Cart.create!(quantity: nil, price: nil)
 
 # Merchandise
 # CANDLES 12 in total
-Merchandise.create!(title: 'The Study', price: 25.00, description: 'Fireside, Cedarwood, Amber, Musk', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'The Study', price: 25.00, description: 'Fireside, Cedarwood, Amber, Musk', image: 'https://i.imgur.com/7Xc7ORh.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Spanked Red', price: 25.00, description: 'Leather, Rose, Musk', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Spanked Red', price: 25.00, description: 'Leather, Rose, Musk', image: 'https://i.imgur.com/gJVl57C.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'California Rose Garden', price: 25.00, description: 'Parsley, Cedarwood, Rose, Tomato Leaf', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'California Rose Garden', price: 25.00, description: 'Parsley, Cedarwood, Rose, Tomato Leaf', image: 'https://i.imgur.com/LCl2VBN.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Kush', price: 25.00, description: 'Cannabis, Teakwood, Musk', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Kush', price: 25.00, description: 'Cannabis, Teakwood, Musk', image: 'https://i.imgur.com/hCRwBna.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Bad Boy', price: 25.00, description: 'Lavandin, Black Pepper, Labdanum, OakMoss', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Bad Boy', price: 25.00, description: 'Lavandin, Black Pepper, Labdanum, OakMoss', image: 'https://i.imgur.com/to7bBnV.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Pespsi-Cola', price: 25.00, description: 'Rum, Pepsi-Cola', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Pespsi-Cola', price: 25.00, description: 'Rum, Pepsi-Cola', image: 'https://i.imgur.com/OkEc5S6.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Beach House', price: 25.00, description: 'Oakmoss, Amber, Jasmine', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Beach House', price: 25.00, description: 'Oakmoss, Amber, Jasmine', image: 'https://i.imgur.com/mIdNwrF.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Carribean Holiday', price: 25.00, description: 'Mango, Lychee, Coconut, Grapefruit', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Thai Holiday', price: 25.00, description: 'Mango, Lychee, Coconut, Grapefruit', image: 'https://i.imgur.com/M8xrLrE.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Spring Break', price: 25.00, description: 'Lemon, Tulip, Musk', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type: 'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Spring Break', price: 25.00, description: 'Lemon, Tulip, Musk', image: 'https://i.imgur.com/CVoj7jl.png', merch_type: 'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'French Kiss', price: 25.00, description: 'Lavender, Patchouli', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type:'candle', cart_id: cart.id )
+Merchandise.create!(title: 'French Kiss', price: 25.00, description: 'Lavender, Patchouli, Amber, Vanilla', image: 'https://i.imgur.com/0jn1pVy.png', merch_type:'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Clean Daddy', price: 25.00, description: 'Bergamot, lavender, Moss, leather', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type:'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Clean Daddy', price: 25.00, description: 'Bergamot, lavender, Moss, leather', image: 'https://i.imgur.com/OEDBJNQ.png', merch_type:'candle', cart_id: cart.id )
 
-Merchandise.create!(title: 'Petals', price: 25.00, description: ', Gardenia, Violet, White Cashmere', image: 'https://images.unsplash.com/photo-1504197906860-da867658e819?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=53dbf408fd2031099229abb6497c70b0&auto=format&fit=crop&w=1502&q=80', merch_type:'candle', cart_id: cart.id )
+Merchandise.create!(title: 'Petals', price: 25.00, description: ', Gardenia, Violet, White Cashmere', image: 'https://i.imgur.com/tsbvYuH.png', merch_type:'candle', cart_id: cart.id )
 
 
 
