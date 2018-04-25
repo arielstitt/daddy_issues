@@ -36,17 +36,16 @@ class CandleListView extends Component {
     render() {
         return (
             <MerchWrap>
-
                 {this.state.merchandise.map(merchandise => {
                     return (
                         <div key={merchandise.id}>
                             <Grid>
-                                <Grid.Column width={6}>
+                                <Grid.Column>
                                     <Segment>
                                         <h1> {merchandise.title}</h1>
                                         <Image
-                                            // height="300px"
-                                            // width="300px"
+                                            height="300px"
+                                            width="300px"
                                             src={merchandise.image}
                                         />
                                         <h3> $ {merchandise.price}</h3>
