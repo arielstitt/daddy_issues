@@ -8,6 +8,12 @@ import styled from 'styled-components'
 const MerchWrap = styled.div`
 display: flex;
 flex-wrap: wrap;
+justify-content:space-around;
+`
+
+const MerchSpace = styled.div`
+padding:3%;
+margin: 1%;
 `
 
 class CandleListView extends Component {
@@ -39,8 +45,8 @@ class CandleListView extends Component {
                 {this.state.merchandise.map(merchandise => {
                     return (
                         <div key={merchandise.id}>
-                            <Grid>
-                                <Grid.Column>
+                            <MerchSpace>
+                                <Grid.Column >
                                     <Segment>
                                         <h1> {merchandise.title}</h1>
                                         <Image
@@ -53,16 +59,7 @@ class CandleListView extends Component {
 
                                 </Grid.Column>
 
-                            </Grid>
-                            {/* <br />
-                            
-                            <br />
-                            
-                            <br />
-                            {merchandise.description}
-                            <br /> */}
-
-
+                            </MerchSpace>
                         </div>
                     )
                 })}
