@@ -10,16 +10,17 @@ import { Header } from 'semantic-ui-react';
 class ShirtListView extends Component {
 
     state = {
-        charcoal:  [],
-        mauve: []
+        charcoal: [],
+        mauve: [],
+        showCharcoal: false
     }
 
     componentDidMount() {
         this.getAllMauve()
-        this.getAllCharcoal() 
+        this.getAllCharcoal()
     }
 
-// create a get all shirts function that calls on the getAllMauve and getAllCharcoal
+    // create a get all shirts function that calls on the getAllMauve and getAllCharcoal
     alertButton = () => {
         alert('you have successfully passed props!')
     }
@@ -50,21 +51,37 @@ class ShirtListView extends Component {
         }
     }
 
+    toggleCharcoalView = () => {
+        this.setState({ showCharcoal: !this.setstate.showCharcoal })
+    }
+
     render() {
         return (
             <div>
-                <HeaderNav/>
-            {/* pass props into the mauve and charcoal components */}
-                <MauveListView 
-                    getAllMauve = {this.getAllMauve}
-                    mauve = {this.state.mauve}
-                />
-                <CharcoalListView
-                    getAllCharcoal = {this.getAllCharcoal} 
-                    charcoal = {this.state.charcoal}
-                />
+                <HeaderNav />
+                {/* pass props into the mauve and charcoal components */}
 
-             
+                {/* if true, show mauve, if false, show charcoal */}
+                
+
+                {this.state.showCharcoal ?
+                    (<CharcoalListView
+                        getAllCharcoal={this.getAllCharcoal}
+                        charcoal={this.state.charcoal}
+                    />) :
+                    (<MauveListView
+                        getAllMauve={this.getAllMauve}
+                        mauve={this.state.mauve}
+                        
+                    />)}
+
+
+
+
+
+
+
+
 
 
             </div>
