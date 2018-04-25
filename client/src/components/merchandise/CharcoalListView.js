@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import HeaderNav from './HeaderNav'
 
 class CharcoalListView extends Component {
     render() {
         return (
             <div>
+                
                 {this.props.charcoal.map(shirt => {
                     return (
                         <div key={shirt.id}>

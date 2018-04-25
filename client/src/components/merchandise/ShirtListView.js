@@ -3,6 +3,8 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import CharcoalListView from "./CharcoalListView"
 import MauveListView from './MauveListView'
+import HeaderNav from './HeaderNav'
+import { Header } from 'semantic-ui-react';
 
 
 class ShirtListView extends Component {
@@ -51,8 +53,8 @@ class ShirtListView extends Component {
     render() {
         return (
             <div>
-                Hello from the shirts list view!!!
-                {/* pass props into the mauve and charcoal components */}
+                <HeaderNav/>
+            {/* pass props into the mauve and charcoal components */}
                 <MauveListView 
                     getAllMauve = {this.getAllMauve}
                     mauve = {this.state.mauve}

@@ -15,8 +15,9 @@ align-items: center;
 
 class LandingPage extends Component {
     state = {
-        background: '#383434'
-    }
+        background: '#383434',
+       
+        }
 
     changeBackground = (color) =>{
         this.setState({background: color})
@@ -29,6 +30,7 @@ class LandingPage extends Component {
                 <div>
                     <UniqueNav
                         changeBackground={this.changeBackground}
+                        background={this.state.background}
                     />
                 </div>
             </LandingWrapper>

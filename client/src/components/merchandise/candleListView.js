@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import UniqueNav from '../UniqueNav'
 import { Grid, Image, Segment } from 'semantic-ui-react'
 import styled from 'styled-components'
+import HeaderNav from './HeaderNav'
 
 const MerchWrap = styled.div`
 display: flex;
@@ -41,31 +42,34 @@ class CandleListView extends Component {
 
     render() {
         return (
-            <MerchWrap>
-                {this.state.merchandise.map(merchandise => {
-                    return (
-                        <div key={merchandise.id}>
-                            <MerchSpace>
-                                <Grid.Column >
-                                    <Segment>
-                                        <h1> {merchandise.title}</h1>
-                                        <Image
-                                            height="300px"
-                                            width="300px"
-                                            src={merchandise.image}
-                                        />
-                                        <h3> $ {merchandise.price}</h3>
-                                    </Segment>
+            <div>
+                <HeaderNav />
+                <MerchWrap>
 
-                                </Grid.Column>
+                    {this.state.merchandise.map(merchandise => {
+                        return (
+                            <div key={merchandise.id}>
+                                <MerchSpace>
+                                    <Grid.Column >
+                                        <Segment>
+                                            <h1> {merchandise.title}</h1>
+                                            <Image
+                                                height="300px"
+                                                width="300px"
+                                                src={merchandise.image}
+                                            />
+                                            <h3> $ {merchandise.price}</h3>
+                                        </Segment>
 
-                            </MerchSpace>
-                        </div>
-                    )
-                })}
+                                    </Grid.Column>
 
-            </MerchWrap>
+                                </MerchSpace>
+                            </div>
+                        )
+                    })}
 
+                </MerchWrap>
+            </div>
         )
 
     };
