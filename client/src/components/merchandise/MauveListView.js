@@ -41,10 +41,10 @@ class MauveListView extends Component {
                 <ToggleButtonWrapper>
                     <div>
                         <MauveButton size='mini'>
-                            p
+                            [p]
                         </MauveButton>
                         <CharcoalButton size='mini ' onClick={this.props.toggleCharcoalView}>
-                            b
+                            [b]
                         </CharcoalButton>
 
                     </div>

@@ -22,22 +22,20 @@ class Api::MerchandisesController < ApplicationController
 
     def show
         @merchandise = Merchandise.find(params[:id])
-        render json: @merchandise 
+        @candle = Merchandise.find(params[:id])
+        @mauve = Merchandise.find(params[:id])
+        @charcoal = Merchandise.find(params[:id])
+        
+        render json: {
+            merchandise: @merchandise,
+            mauve: @mauve,
+            charcoal: @charcoal
+        }
+
+
     end
 
-    # def update
-    #     # find the merchandise by id
-    #     @merchandise = Merchandise.find(params[:id])
-    #     @merchandise.update!(merchandise_params)
 
-    #     render json: @merchandise 
-    # end
-
-    # def destroy
-    #     @merchandise = Merchandise.find(params[:id]).delete
-
-    #     render status: :ok
-    # end
 
     private 
 

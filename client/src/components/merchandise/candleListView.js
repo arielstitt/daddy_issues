@@ -20,13 +20,29 @@ margin: 1%;
 class CandleListView extends Component {
 
     state = {
-        merchandise: []
+        merchandise: [],
+        candle: {}
     }
 
     componentDidMount() {
         this.getAllCandles()
+        this.getSingleCandle()
     }
 
+    getSingleCandle = async () => {
+        try {
+            const candleId = this.state.candle.id
+            const response = await axios.get(`/api/merchandises/${candleId}`);
+            this.setState({
+                candle: response.data.candles
+            });
+            console.log(response.data.candles)
+        } catch (err) {
+            console.log(err);
+            this.setState({ err: err.message });
+        }
+        
+    }
     getAllCandles = async () => {
         try {
             const response = await axios.get("/api/merchandises");
