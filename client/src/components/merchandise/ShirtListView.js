@@ -55,9 +55,11 @@ class ShirtListView extends Component {
                 {/* pass props into the mauve and charcoal components */}
                 <MauveListView 
                     getAllMauve = {this.getAllMauve}
+                    mauve = {this.state.mauve}
                 />
                 <CharcoalListView
-                    getAllCharcoal = {this.getAllMauve} 
+                    getAllCharcoal = {this.getAllCharcoal} 
+                    charcoal = {this.state.charcoal}
                 />
 
              

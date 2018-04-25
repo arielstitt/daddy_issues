@@ -48,27 +48,37 @@ Merchandise.create!(title: 'Spa Day', price: 25.00, description: 'Lavender, Patc
 # SHIRTS
 # mauve
 
-Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://www.virginmegastore.ae/medias/sys_master/root/h38/h50/9095126745118/5349321899-main.jpg', merch_type:'Mauve
+Merchandise.create!(title: 'Girl', price: 25.00, description: 'Pink Tee with Neon Girl', image: 'https://i.imgur.com/FegYq6u.png', merch_type:'Mauve
 ', cart_id: cart.id )
 
-Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'http://www.diediedie.co.nz/images/large/Levis_Sale/Levi%20s%20new%20Zealand%20Store%20Women%20Levi%20s%20Sutro%20Tee%20-%20Color%20Mauve%20Chalk%20Garment%20Dyed%20Levi%20s%20Shirts%20Tops%20new%20Zealand%20Sale%20br%20Women%20Shirts%20Tops%20906_LRG.jpg', merch_type:'Mauve', cart_id: cart.id )
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://i.imgur.com/0xJjGs9.png', merch_type:'Mauve', cart_id: cart.id )
 
-Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://www.virginmegastore.ae/medias/sys_master/root/h38/h50/9095126745118/5349321899-main.jpg', merch_type:'Mauve
+Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://i.imgur.com/N5g3jvO.png', merch_type:'Mauve
 ', cart_id: cart.id )
 
-Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'http://www.diediedie.co.nz/images/large/Levis_Sale/Levi%20s%20new%20Zealand%20Store%20Women%20Levi%20s%20Sutro%20Tee%20-%20Color%20Mauve%20Chalk%20Garment%20Dyed%20Levi%20s%20Shirts%20Tops%20new%20Zealand%20Sale%20br%20Women%20Shirts%20Tops%20906_LRG.jpg', merch_type:'Mauve', cart_id: cart.id )
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://i.imgur.com/vAHdbbY.png', merch_type:'Mauve', cart_id: cart.id )
 
+Merchandise.create!(title: 'Lips', price: 25.00, description: '100% Cotton Tee with Grey Woman', image: 'https://i.imgur.com/eIhqks5.png', merch_type:'Mauve', cart_id: cart.id )
 
+Merchandise.create!(title: 'Lips', price: 25.00, description: '100% Cotton Tee with Grey Woman', image: 'https://i.imgur.com/DGw8FRf.png', merch_type:'Mauve', cart_id: cart.id )
 
+Merchandise.create!(title: 'Lips', price: 25.00, description: '100% Cotton Tee with Grey Woman', image: 'https://i.imgur.com/V2WBDOA.png', merch_type:'Mauve', cart_id: cart.id )
+
+Merchandise.create!(title: 'Lips', price: 25.00, description: '100% Cotton Tee with Grey Woman', image: 'https://i.imgur.com/uvLVs57.png', merch_type:'Mauve', cart_id: cart.id )
 # Charcoal
 
-Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
 
-Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
 
-Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://i.imgur.com/tI8sXy2.png', merch_type:'Charcoal', cart_id: cart.id )
 
-Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://scene7.zumiez.com/is/image/zumiez/pdp_hero/Elwood-Faux-Cashmere-Curved-Hem-Charcoal-Tall-T-Shirt-_268480-front.jpg', merch_type:'Charcoal', cart_id: cart.id )
+Merchandise.create!(title: 'Lips', price: 25.00, description: 'Lips', image: 'https://i.imgur.com/8Am8OaW.png', merch_type:'Charcoal', cart_id: cart.id )
 
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://i.imgur.com/y84bkPU.png', merch_type:'Charcoal', cart_id: cart.id )
+
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://i.imgur.com/dKIBR7K.pngg', merch_type:'Charcoal', cart_id: cart.id )
+
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://i.imgur.com/vzjITc7.png', merch_type:'Charcoal', cart_id: cart.id )
+
+Merchandise.create!(title: 'Party', price: 25.00, description: 'Party', image: 'https://i.imgur.com/wX5AI7l.png', merch_type:'Charcoal', cart_id: cart.id )
 
 

@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import UniqueNav from '../UniqueNav'
+import { Grid, Image, Segment } from 'semantic-ui-react'
+import styled from 'styled-components'
 
+const MerchWrap = styled.div`
+display: flex;
+flex-wrap: wrap;
+`
 
 class CandleListView extends Component {
 
     state = {
-        merchandise:  []
+        merchandise: []
     }
 
     componentDidMount() {
@@ -28,26 +35,40 @@ class CandleListView extends Component {
 
     render() {
         return (
-            <div>
+            <MerchWrap>
 
-                hello from the candle list view!!!
                 {this.state.merchandise.map(merchandise => {
                     return (
                         <div key={merchandise.id}>
+                            <Grid>
+                                <Grid.Column width={6}>
+                                    <Segment>
+                                        <h1> {merchandise.title}</h1>
+                                        <Image
+                                            // height="300px"
+                                            // width="300px"
+                                            src={merchandise.image}
+                                        />
+                                        <h3> $ {merchandise.price}</h3>
+                                    </Segment>
+
+                                </Grid.Column>
+
+                            </Grid>
+                            {/* <br />
+                            
                             <br />
-                            <h1>{merchandise.title}</h1>
-                            <br />
-                            {merchandise.price}
+                            
                             <br />
                             {merchandise.description}
-                            <br />
-                            <img height="300px" width="300px" src={merchandise.image} />
-                         
+                            <br /> */}
+
+
                         </div>
                     )
                 })}
 
-            </div>
+            </MerchWrap>
 
         )
 
