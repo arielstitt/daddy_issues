@@ -10,15 +10,23 @@ color:white;
 const MauveButton = styled.button`
 background-color: pink;
 `
+const ToggleButtonWrapper = styled.div`
+height = 1vh;
+background-color: pink;
+display: flex:
+justify-content: space-around;
+`
+
 class CharcoalListView extends Component {
     render() {
         return (
             <div>
                 <div>
-                    <CharcoalButton>Charcoal</CharcoalButton>
                     <MauveButton onClick={this.props.toggleCharcoalView}>
                         Pink
                         </MauveButton>
+                    <CharcoalButton>Charcoal</CharcoalButton>
+
                 </div>
                 {this.props.charcoal.map(shirt => {
                     return (

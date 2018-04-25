@@ -1,9 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Notes to Future Self 
 
-Things you may want to cover:
+Refactoring is needed. There are a lot of repeated styling that can be separated in to individual styled components and imported to the components where it is needed.
+
+
 
 * Ruby version
 

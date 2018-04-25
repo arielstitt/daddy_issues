@@ -61,10 +61,7 @@ class ShirtListView extends Component {
                 {/* pass props into the mauve and charcoal components */}
 
                 {/* if true, show mauve, if false, show charcoal */}
-                <button onClick={this.toggleCharcoalView}>
-                    char
-                </button>
-
+               
                 {this.state.showCharcoal ?
                     (<CharcoalListView
                         toggleCharcoalView = {this.toggleCharcoalView}
