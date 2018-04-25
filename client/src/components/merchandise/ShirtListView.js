@@ -67,10 +67,12 @@ class ShirtListView extends Component {
 
                 {this.state.showCharcoal ?
                     (<CharcoalListView
+                        toggleCharcoalView = {this.toggleCharcoalView}
                         getAllCharcoal={this.getAllCharcoal}
                         charcoal={this.state.charcoal}
                     />) :
                     (<MauveListView
+                        toggleCharcoalView = {this.toggleCharcoalView}
                         getAllMauve={this.getAllMauve}
                         mauve={this.state.mauve}
 
