@@ -1,16 +1,27 @@
 import React, { Component } from 'react';
+import styled from 'styled-components'
+import HeaderNav from './merchandise/HeaderNav'
+import { Header } from 'semantic-ui-react';
+
+
+const ComingSoonWrapper = styled.div`
+display:flex;
+justify-content; space-around;
+background-color: #c1929a;
+height: 100vh;
+`
 
 class AboutUs extends Component {
     render() {
         return (
             <div>
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, magnam quas. Dolore ullam fugit error nisi, pariatur tempore vero officia, ipsum tenetur excepturi dolorem. Nesciunt cupiditate voluptas ullam quod soluta.</div>
+                <HeaderNav />
+                <ComingSoonWrapper>
+                
+                   <img src="http://boyyeahright.corgiorgy.com/" alt=""/>
+                    
+                </ComingSoonWrapper>
 
-                <br />
-                <div>    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis voluptates obcaecati accusamus impedit dolorum. Rerum maxime, doloribus iusto, assumenda ipsum doloremque provident sequi incidunt, officiis tempora cum. Dignissimos, odit eaque!</div>
-
-                <br />
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae necessitatibus excepturi consectetur voluptatem alias laudantium? Quibusdam recusandae qui voluptatem aliquid eveniet laudantium iure sed eligendi, odio sint, doloremque ex voluptas?</div>
 
             </div>
         );
