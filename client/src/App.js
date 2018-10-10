@@ -7,7 +7,7 @@ import LoginForm from "./components/issues/LoginForm"
 import IssuesListView from './components/issues/IssuesListView';
 import About from './components/AboutUs'
 import SingleIssueView from './components/issues/SingleIssueView';
-import CandleListView from './components/merchandise/CandleListView'
+import CandleListView from './components/merchandise/CandleListViews'
 import ShirtListView from './components/merchandise/ShirtListView';
 
 class App extends Component {
